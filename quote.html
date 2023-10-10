@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="app.css">
+    <script src="app.js"></script>
+    <title>Quote</title>
+</head>
+<body>
+
+    
+<!--header-->
+<div class=" flex justify-around lg:justify-center space-x-6 select-none left-0 right-0 bottom-0 top-0 fixed bg-white w-full h-24 p-3">
+    <img class="w-20 h-15" src="/image/cropped-UD01-1.png"/>
+    <div class="">
+        <a href="index.html">
+            <h1 style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;" class="font-bold text-xl text-red-500">URBAN DESIGNER</h1>
+            <p class="text-gray-600 font-semibold">INTERIOR & EXTERIOR EXPERTS</p>
+       </a>
+    </div>
+    <a href="interior.html"><h1 class="font-bold mt-7 hover:text-green-600 text-pink-500 md:block hidden">INTERIOR DESIGNING</h1></a>
+   <a href="exterior.html"><h1 class="font-bold mt-7 hover:text-green-600 text-orange-500 md:block hidden">EXTERIOR DESIGNING</h1></a>
+    <a href="modular.html"><h1 class="font-bold mt-7 hover:text-green-600 text-indigo-500 md:block hidden">MODULAR KITCHEN</h1></a>
+    <a href="products.html"><h1 class="font-bold mt-7 hover:text-green-600 text-fuchsia-500 md:block hidden">PRODUCTS</h1></a>
+    
+        <div id="mySidenav" class="sidenav bg-green-700 text-green-300 rounded-lg">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a class="bg-green-500 rounded-xl" href="index.html">HOME</a>
+            <a href="/interior.html">INTERIOR DESIGN</a>
+            <a href="exterior.html">EXTERIOR DESIGN</a>
+            <a href="modular.html">MODULAR KITCHEN</a>
+            <a href="products.html">PRODUCTS</a>
+          </div>
+          <span class="shadow-2xl block lg:hidden" style="font-size:30px;cursor:pointer " onclick="openNav()">&#9776;</span>
+
+    </div>
+<form action="mailto:urbandesignersmailbox@gmail.com" method="get" enctype="text/plain">
+    <div class="border p-6 rounded-lg shadow-2xl mt-32 bg-white m-auto w-96">
+        <div class="p-3 space-y-3">
+           <h1 class="text-2xl font-semibold">Design For Every Budget</h1>
+           <input name="Name" class="p-3 border rounded-lg w-full focus:border-green-500" placeholder="Name"/>
+           <input name="Email ID" class="p-3 border rounded-lg w-full" placeholder="Email ID"/>
+           <input name="Phone number" class="p-3 border rounded-lg w-full" placeholder="Phone Number"/>
+           <div class="flex space-x-3">
+               <input class="accent-pink-500 w-4" type="checkbox"/>
+               <p>Send me update on WhatsApp</p>
+           </div>
+           <input name="Property" class="p-3 border rounded-lg w-full" placeholder="Property"/>
+           <button type="submit" value="send" class="text-center w-full p-3 rounded-full bg-green-500 text-white font-semibold border-2 border-green-500 hover:bg-white hover:text-green-500 focus:ring-2">GET FREE QUOTE</button>
+        </div>
+   </div>
+</form>
+
+
+</body>
+</html>
